@@ -1,7 +1,14 @@
 {
   "expo": {
+    "permissions": ["ACCESS_FINE_LOCATION"],
     "scheme": "acme",
     "newArchEnabled": "true",
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show relevant content.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location at all times."
+      }
+    },
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
