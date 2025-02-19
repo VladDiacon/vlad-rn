@@ -1,9 +1,14 @@
 {
   "expo": {
-    "permissions": ["ACCESS_FINE_LOCATION"],
+    "permissions": [
+      "ACCESS_FINE_LOCATION"
+    ],
     "scheme": "acme",
     "newArchEnabled": "true",
     "ios": {
+      "config": {
+        "usesNonExemptEncryption": false
+      },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "This app uses your location to show relevant content.",
         "NSLocationAlwaysUsageDescription": "This app needs access to your location at all times."
@@ -20,17 +25,23 @@
         {
           "origin": "https://n"
         }
-        
       ],
+      [
+      "expo-secure-store",
+      {
+        "configureAndroidBackup": true,
+        "faceIDPermission": "Allow $(PRODUCT_NAME) to access your Face ID biometric data."
+      }
+    ],
       [
         "expo-location",
         {
           "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "name": "vlad",
     "slug": "vlad"
   }
-  
 }
