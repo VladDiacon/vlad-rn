@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
       authenticated: PropTypes.bool,
     } >
     ({
-      token: null,
+      token: null,  
       authenticated: null,
     });
     useEffect(() => {

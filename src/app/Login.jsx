@@ -1,6 +1,8 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import { useAuth } from './AuthContext';
+import { useAuth } from './AuthContextt'
+import { AuthProvider } from './AuthContextt';
+
 
 const Login = () => {
   const [email, setEmail] = useState('');
